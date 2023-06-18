@@ -175,7 +175,7 @@ def draw_map(file, example_frame) -> None:
             colored_centroids_img,
             (int(centroids[i][0]), int(centroids[i][1])),
             2,
-            (255, 255, 255)#dict_cluster_color.get(cluster_number),
+            dict_cluster_color.get(cluster_number),
             -1
         )
         # draw_str(colored_centroids_img, (int(centroids[i][0])+5, int(centroids[i][1])+5), f'{int(centroids[i][0])};{int(centroids[i][1])}')
@@ -204,7 +204,7 @@ def draw_map(file, example_frame) -> None:
                 map_img,
                 (x1, y1),
                 (x2, y2),
-                (255, 255, 255)#dict_cluster_color.get(cluster_number)
+                dict_cluster_color.get(cluster_number)
             )
             # draw_str(map_img, (x1+5, y1+5), f'{x1};{y1}')
             # draw_str(map_img, (x2+5, y2+5), f'{x2};{y2}')
